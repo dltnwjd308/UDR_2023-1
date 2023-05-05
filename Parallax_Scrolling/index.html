@@ -1,1 +1,76 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin:0;
+        }
+        .scene{
+            height: 100vh;
+            overflow : hidden;
+            background-attachment : fixed;
+            font-family : 'Roboto';
+            font-weight: 200;
+        }
+        .scene.one{
+            background-image: url(img1.jpg);
+        }
+        .scene.two{
+            background-image: url(img2.jpg);
+        }
+        .scene.three{
+            background-image: url(img1.jpg);
+        }
+        .scene header {
+            max-width: 80%;
+            position : relative;
+            left: 50%; 
+            top: 50%;
+            transform : translateX(-50%) translateY(-50%);
+            font-size : 1.5rem;
+            text-align: center;
+            color : white;
+        }
+        .scene header h1{
+            font-size : 2rem;
+            margin-bottom : 1rem;
+            font-weight:400;
+        }
+        .scene header h1:after{
+            content:'';
+            border-bottom:1px solid white;
+            width: 10rem;
+            display: block;
+            margin: 0 auto;
+            margin-top:1rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <section class = "scene one">
+        <header>
+            <h1>5월의 하루</h1>
+            뚝섬유원지에서 바라본 노을 1
+        </header>
+    </section>
+    <section class = "scene two">
+        <header>
+            <h1>5월의 하루</h1>
+            뚝섬유원지에서 바라본 노을 2
+        </header>
+    </section>
+    <section class = "scene three">
+        <header>
+            <h1>5월의 하루</h1>
+            뚝섬유원지에서 바라본 노을 3
+        </header>
+    </section>
+</body>
+</html>
